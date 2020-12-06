@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Login Form</title>
+  </head>
+  <style>
+  .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    }  
+	Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+	button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+	input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+	button:hover {   
+        opacity: 0.7;   
+    }    
+	</style>
+
+  <body>
+	<center> <h1> Login Form </h1> </center> 
+	<form action="/login" method="post">
+		<div class="container"> 
+	  <!-- submit button -->
+	  <label>Username : </label>   
+            <input type="text" id=name placeholder="Enter Username" name="username" required> <br>
+            <label>Password : </label>   
+			<input type="password" id=password placeholder="Enter Password" name="password" required> <br>
+			<input type="checkbox" id=check checked="checked"> Remember me <br>
+			<button type="submit" value="login">Login</button>
+	  <button type="button" class="cancelbtn" id=cancel> Cancel</button> 
+	  </div>
+	</form>
+  </body>
+</html>
